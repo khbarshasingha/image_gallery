@@ -10,10 +10,6 @@ class App extends Component {
   //     image: ""
   //   };
   // }
-  searchChange = event => {
-    const files = event.target.files;
-    console.log("data files", files);
-  };
 
   render() {
     return (
@@ -23,7 +19,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div>
-          <UploadButton onchange={this.searchChange} />
+          <UploadButton />
         </div>
       </div>
     );
